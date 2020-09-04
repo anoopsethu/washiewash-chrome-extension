@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>Wash Your Hands!</title>
+    <style>
+      html, body{
+        padding: 0px;
+        margin: 0px;
+        width: 300px;
+      }
+      body {
+        text-align: center;
+      }
+      .container{
+        margin: 15px 15px 0px 15px;
+      }
+      .remind-header{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      .ui-control-btn{
+        height: 40px;
+        width: 40px;
+        border-radius: 1000px;
+        background: #fff;
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 0px;
+        outline: none;
+        font-size: 24px;
+        line-height: 24px;
+        display: inline-block;
+      }
+      .ui-control-btn:hover{
+        background: #eee;
+      }
+      .hour-count{
+        display: inline-block;
+        margin: 0px 20px;
+        position: relative;
+        top: -1px;
+      }
+      .ui-cta-primary{
+        background: #00a5ec;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 1000px;
+        border: none;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        outline: none;
+        margin-top: 15px;
+      }
+      .ui-cta-primary:hover{
+        opacity: 0.7;
+      }
+      .ui-cta-secondary{
+        background: #fff;
+        color: #777;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        border: none;
+        padding: 13px;
+        display: block;
+        width: 100%;
+        outline: none;
+        margin-top: 0px;
+      }
+      .intro-block{
+        padding: 15px;
+        margin: -15px -15px -10px -15px;
+      }
+      .intro-block img{
+        width: 90px;
+        margin: 10px auto;
+      }
+      .footer-block{
+        padding: 15px 15px 15px 45px;
+        margin: 5px -15px 0px -15px;
+        background: #fafafa;
+        border-top: 1px solid #ddd;
+        position: relative;
+        text-align: left;
+      }
+      .footer-block img{
+        max-width: 24px;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+      }
+      .footer-header{
+        font-size: 13px;
+        font-weight: 700;
+        color: #444;
+        text-transform: uppercase;
+        margin: 0px 0px 5px 0px;
+      }
+      .footer-text{
+        text-align: left;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.4;
+        font-size: 13px;
+        margin: 0px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="intro-block">
+        <img src="logo.png">
+      </div>
+
+      <h2 class="remind-header">Remind me to wash hands in</h2>
+      <div class="hour-block">
+        <button id="btn-minus" class="ui-control-btn">-</button>
+        <h1 class="hour-count"><span id="hours">2</span> hours</h1>
+        <button id="btn-plus" class="ui-control-btn">+</button>
+      </div>
+      <button id="set-reminder" class="ui-cta-primary">Set reminder</button>
+      <button id="cancel-alarm" class="ui-cta-secondary">Cancel reminder</button>
+      <!-- <button id='sampleSecond' value='0.1'>Sample Second</button>
+      <button id='15min' value='15'>15 Minutes</button>
+      <button id='30min' value='30'>30 Minutes</button> -->
+
+      <div class="footer-block">
+        <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/238/electric-light-bulb_1f4a1.png">
+        <h6 class="footer-header">Did you know?</h6>
+        <p id="footer-text" class="footer-text">Clean hands are one of the best defences against antibiotic-resistant infections.</p>
+      </div>
+
+    </div>
+   <script src="popup.js"></script>
+  </body>
+</html>
